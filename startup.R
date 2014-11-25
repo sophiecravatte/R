@@ -19,8 +19,19 @@ getwd()
 data <- read.table("index", header=TRUE, sep=";")
 
 #A new variable is available for exemple here it's "data" and "data" contains the table
-#You can see the content of the table with this command
+#You can see the content of the table with this command (just type your variable name)
 data
 
 #You can also see the table like a GUI interface with this command
 View(data)
+
+#Set a language for the date (FR_fr to EN_en)
+Sys.setlocale(category = "LC_TIME", locale="C")
+
+#Set the date format of a table (with a new variable, here "DATE")
+#variable <- as.Date(variable$argument, "fonction")
+#TIPS : "%d" as day | "%b" or %m" as month | "%Y" as year
+#Separator (17-10-98 = "%d-%b-%Y") - (17/10/98 = "%d/%b/%Y") 
+DATE <- as.Date(data$DATE, "%d-%b-%Y") 
+
+
