@@ -1,5 +1,4 @@
-R & RStudio
-By nastyz98
+R & RStudio by Nathan Agez november 2014
 =
 
 Some important commands for "R" &amp; "RStudio"
