@@ -34,4 +34,8 @@ Sys.setlocale(category = "LC_TIME", locale="C")
 #Separator (17-10-98 = "%d-%b-%Y") - (17/10/98 = "%d/%b/%Y") 
 DATE <- as.Date(data$DATE, "%d-%b-%Y") 
 
+#selections arguments multiples 
+pluie_sub = pluie[pluie$NOM=="NOUMEA" | pluie$NOM=="BOULOUPARIS",]
+
+
 
