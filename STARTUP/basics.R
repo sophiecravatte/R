@@ -35,7 +35,7 @@ Sys.setlocale(category = "LC_TIME", locale="C")
 DATE <- as.Date(data$DATE, "%d-%b-%Y") 
 
 #selections arguments multiples 
-pluie_sub = pluie[pluie$NOM=="NOUMEA" | pluie$NOM=="BOULOUPARIS",]
-
+#pluie_sub = pluie[pluie$NOM=="NOUMEA" | pluie$NOM=="BOULOUPARIS"]
+data = variable$valeur=="valeur" | variable$valeur=="valeur"]
 
 
