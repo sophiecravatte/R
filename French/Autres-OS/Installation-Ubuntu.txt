@@ -1,0 +1,11 @@
+#===========================================================================================
+#											   |
+#autor : NastyZ98 / version 0.1 / november 2014						   |
+#											   |
+#===========================================================================================
+
+To install "R" under Ubuntu use this command : 
+sudo apt-get install r-base
+
+Pour installer "R" sous Ubuntu utilisez cette commande dans votre terminal : 
+sudo apt-get install r-base
