@@ -1,0 +1,13 @@
+#Création data.frame avec FMA
+PLUIE_JFM = INDICE_PLUIE[INDICE_PLUIE$month=="02" | INDICE_PLUIE$month=="03" | INDICE_PLUIE$month=="04",]
+
+#
+f_years = factor(PLUIE_MAM$years)
+class(f_years)
+tapply(PLUIE_JFM$INDICE, f_years, mean, na.rm=TRUE)
+INDICE_ANNUEL_MAM <- tapply(PLUIE_MAM$INDICE, f_years, mean, na.rm=TRUE)
+
+DATE_MAM <- as.Date(PLUIE_MAM$years, "%Y")
+DATE_MAM
+
+DATE_JFM <- as.Date(paste("15", "02",PLUIE_JFM$years, sep="/"), "%d/%m/%Y")
