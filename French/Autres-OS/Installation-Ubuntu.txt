@@ -9,3 +9,5 @@ sudo apt-get install r-base
 
 Pour installer "R" sous Ubuntu utilisez cette commande dans votre terminal : 
 sudo apt-get install r-base
+
+
